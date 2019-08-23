@@ -1,19 +1,16 @@
-#include "Space.h"
+#include "Player1.h"
 
 //function implementation
 
-Space::Space()
-{
-    
-}
 
-void Space::update()
+
+void Player1::update()
 {
     //updates game logic
     
 }
 
-void Space::render()
+void Player1::render()
 {
     //visualizing what's on the screen
     

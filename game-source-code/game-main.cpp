@@ -1,4 +1,4 @@
-#include "Space.h"
+#include "Player1.h"
 #include <iostream>
 
 using namespace std;
@@ -6,7 +6,7 @@ int main()
 {
 
     //creating a game window
-    sf::RenderWindow window(sf::VideoMode(800,600), "Space Invaders Game",sf::Style::Close | sf::Style::Resize);
+    sf::RenderWindow window(sf::VideoMode(1920,1080), "Space Invaders Game",sf::Style::Close | sf::Style::Resize);
     sf::Event eve;
     
     //Creating Game Loop

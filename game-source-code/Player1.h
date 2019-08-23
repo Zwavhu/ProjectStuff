@@ -1,5 +1,5 @@
-#ifndef SPACE_H
-#define SPACE_H
+#ifndef PLAYER1_H
+#define PLAYER1_H
 //////////////////////////////////////////////////////////////
 //// Headers
 //////////////////////////////////////////////////////////////
@@ -13,7 +13,7 @@
 /*
  ---
 */
-class Space
+class Player1
 {
  public:
       // function declaration
@@ -24,17 +24,13 @@ class Space
    
  private:
     // Define some constants
-    const int gameWidth = 1920;
-    const int gameHeight = 1080;
+    //const int gameWidth = 1920;
+    //const int gameHeight = 1080;
     void initWindow();
     void initVariables();
     
     
 };
-
-
-
-
 
 
 

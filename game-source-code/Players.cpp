@@ -12,12 +12,31 @@ Players::Players()
     rect2.setSize(sf::Vector2f(rectWidth,rectHeight));
     rect.setPosition(sf::Vector2f(x1Pos,y1Pos));     //setting original position to bottom of screen 
     rect2.setPosition(sf::Vector2f(x2Pos,y2Pos)); 
-    rect.setFillColor(sf::Color(255, 111, 0));
+    rect.setFillColor(sf::Color(255, 111, 255));
+    rect2.setFillColor(sf::Color(255, 111, 255));
 }
 
-void Players::setPlayer1Pos()
+void Players::updateMotion()
 {
-    
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left))
+         {
+            rect.move(-motionSpeed, 0.0f);
+         }
+            
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right))
+        {
+            rect.move(motionSpeed, 0.0f);
+        }
+        
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::V))
+         {
+            rect2.move(-motionSpeed, 0.0f);
+         }
+            
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::M))
+        {
+            rect2.move(motionSpeed, 0.0f);
+        }
 }
 
 

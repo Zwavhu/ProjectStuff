@@ -11,16 +11,16 @@ class Players : public gameObjects //THIS SHOWS THAT IT'S INHERITING FROM THE GA
 {
 public:
     Players();
-    float motionSpeed = 5.0f;
-    void setPlayer1Pos();
+    float motionSpeed = 10.0f;
+    void updateMotion();
     
 private:
     const int rectWidth = 50;
     const int rectHeight = 50;
     const float  x1Pos = (510-rectHeight)*0.5; //placing player1 at center
     const float y1Pos = 510-rectHeight;     //placing player1 at the bottom. NOTE:510 is the height of screen, should change for sun=bmission
-    const float  x2Pos = (rectHeight-510)*0.5; //placing player2 at center
-    const float y2Pos = rectHeight-510;     //placing player2 at the Top. NOTE:510 is the
+    const float  x2Pos = (510-rectHeight)*0.5; //placing player2 at center
+    const float y2Pos = 0;     //placing player2 at the Top. NOTE:510 is the
     
 };
 

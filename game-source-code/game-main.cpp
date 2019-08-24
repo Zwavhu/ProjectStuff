@@ -53,9 +53,11 @@ int main()
             //updating game
             
             //rendering game
-            window.clear(sf::Color::Blue);
+            window.clear(sf::Color::Black);
             
+            window.draw(player1.rect2);
             window.draw(player1.rect);
+            player1.updateMotion();
 
             //Drawing game here
             

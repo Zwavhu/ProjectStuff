@@ -17,8 +17,8 @@ class Player1
 {
  public:
       // function declaration
-      Space();
-      sf::RectangleShape createPlayerOne();
+      Player1();
+      virtual ~Player1();
       void update();
       void render();
    
@@ -28,6 +28,9 @@ class Player1
     //const int gameHeight = 1080;
     void initWindow();
     void initVariables();
+    //sf::RectangleShape Canon12{};
+    virtual void initPlayer1(); //creating virtual void to make inheritance easy
+
     
     
 };
